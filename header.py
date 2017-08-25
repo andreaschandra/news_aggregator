@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 
 #Connection and urllib3
 http = urllib3.PoolManager()
+https = urllib3.PoolManager( cert_reqs='CERT_REQUIRED', ca_certs=certifi.where())
 
 def generate_date(prev_date):
     date_list = []

@@ -1,8 +1,7 @@
 import urllib3
 import certifi
 import re
-import connection
-import mysql.connector as sql
+import MySQLdb as sql
 from datetime import date, timedelta, datetime
 from bs4 import BeautifulSoup
 
@@ -24,13 +23,10 @@ def insert(title, image, url, date):
     
     #Try Except
     try:
-        data_table = ("INSERT INTO data (TITLE, IMAGE, URL, DATE) VALUES (%s, %s, %s, %s)")
-        data_value = (title, image, url, date)
-
-        cursor.execute(data_table, data_value)
+        cursor.execute("""INSERT INTO data (TITLE, IMAGE, URL, DATE) VALUES (%s, %s, %s, %s)""", (title, image, url, date))
         db_connection.commit()
         
-    except sql.IntegrityError:
+    except:
         print('duplicate entry')
         
     cursor.close()

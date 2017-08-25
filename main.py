@@ -1,3 +1,5 @@
 import domain
+import bintang
 
-print(domain.vemale_list)	
+for url in domain.bintang_list:
+	bintang.pull_data_bintang(url, 2, 1)

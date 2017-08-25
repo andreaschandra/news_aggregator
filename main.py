@@ -1,3 +1,3 @@
 import domain
 
-print(domain.cnn)	
+print(domain.vemale_list)	

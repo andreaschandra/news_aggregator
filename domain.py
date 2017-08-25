@@ -1,4 +1,8 @@
 #HTTP
+liputan6 = 'http://www.liputan6.com/indeks/'
+okezone = 'http://index.okezone.com/bydate/index/'
+tribunnews = 'http://www.tribunnews.com/index-news?date='
+hipwee = 'http://www.hipwee.com/terbaru/?halaman='
 bintang_list = [
           'http://www.bintang.com/celeb/indeks/',
           'http://www.bintang.com/lifestyle/indeks/',
@@ -33,11 +37,6 @@ movila_list = [
           'http://www.muvila.com/foto/index',
           'http://www.muvila.com/video/index'
           ]
-liputan6 = 'http://www.liputan6.com/indeks/'
-okezone = 'http://index.okezone.com/bydate/index/'
-tribunnews = 'http://www.tribunnews.com/index-news?date='
-hipwee = 'http://www.hipwee.com/terbaru/?halaman='
-
 
 
 

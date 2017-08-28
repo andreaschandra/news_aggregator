@@ -1,6 +1,7 @@
 import urllib3
 import certifi
 import re
+import json
 import MySQLdb as sql
 from datetime import date, timedelta, datetime
 from bs4 import BeautifulSoup

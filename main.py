@@ -2,6 +2,11 @@ import domain
 import bintang
 import cnn
 import detik
+import hipwee
+import jalantikus
+import kapanlagi
+import kompas
+import kumparan
 
 # for url in domain.bintang_list:
 # 	bintang.pull_data_bintang(url, 2, 1)
@@ -22,3 +27,18 @@ import detik
 
 # detik.pull_data_wolipop_detik(domain.detik_wolipop, 2)
 
+# hipwee.pull_data_hipwee(domain.hipwee, 5)
+
+# for url_jt in domain.jalantikus_list:
+#     jalantikus.pull_data_jalantikus(url_jt, 2)
+
+# for url_kl in domain.kapanlagi_list:
+#     kapanlagi.pull_data_kapanlagi(url_kl, 20)
+
+# kapanlagi.pull_data_kapanlagi_video(domain.kapanlagi_video, 2)
+
+# for url_komp in domain.kompas_list:
+# 	kompas.pull_data_kompas(url_komp, 20, 2	)
+
+for url_kumparan in domain.kumparan_list:
+	kumparan.pull_data_kumparan(url_kumparan, 2)

@@ -66,12 +66,12 @@ jalantikus_list = [
           ]
 
 kapanlagi_list = [
-          'https://www.kapanlagi.com/showbiz/selebriti/index2.html',
-          'https://www.kapanlagi.com/showbiz/hollywood/index2.html',
-          'https://www.kapanlagi.com/film/index2.html',
-          'https://www.kapanlagi.com/showbiz/asian-star/index2.html',
-          'https://video.kapanlagi.com/index2.html'
+          'https://www.kapanlagi.com/showbiz/selebriti/index',
+          'https://www.kapanlagi.com/showbiz/hollywood/index',
+          'https://www.kapanlagi.com/film/index',
+          'https://www.kapanlagi.com/showbiz/asian-star/index',          
           ]
+kapanlagi_video = 'https://video.kapanlagi.com/index'
 kumparan_list = [
           'https://api.kumparan.com/v1.0/stories?topic=liputan-khusus&page=',
           'https://api.kumparan.com/v1.0/stories?topic=viral&page=',

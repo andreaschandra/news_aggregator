@@ -265,17 +265,17 @@ def pull_data_travel_detik(domain, duration):
 
 def pull_data_hot_sport_sb_detik(domain, duration):
     
-    date = generate_date(duration)
+    date = header.generate_date(duration)
     for date_current in date:
         url = domain
         print(url)
 
         #Get article from website
-        req = http.request('POST', 
+        req = header.https.request('POST', 
                            url, 
                            fields={'datepick': date_current.strftime('%m/%d/%Y')}
                           )
-        soup = BeautifulSoup(req.data, 'lxml')
+        soup = header.BeautifulSoup(req.data, 'lxml')
 
         try:
             container = soup.find('ul', attrs={'id':'indeks-container'})
@@ -312,24 +312,24 @@ def pull_data_hot_sport_sb_detik(domain, duration):
             #Get Date
             date = date_current
 
-            insert(title, image, url, date)
+            header.insert(title, image, url, date)
             
     return "done"
 
 def pull_data_food_health_detik(domain, duration):
-    date = generate_date(duration)
+    date = header.generate_date(duration)
     for date_current in date:
         url = domain
         print(url)
 
         #Get article from website
-        req = http.request('POST', 
+        req = header.https.request('POST', 
                            url, 
                            fields={'tgl': date_current.strftime('%d'),
                                    'bln': date_current.strftime('%m'),
                                    'thn': date_current.strftime('%Y')}
                           )
-        soup = BeautifulSoup(req.data, 'lxml')
+        soup = header.BeautifulSoup(req.data, 'lxml')
 
         try:
             containers = soup.find_all('ul', attrs={'class':'list_indeks'})            
@@ -372,24 +372,24 @@ def pull_data_food_health_detik(domain, duration):
                 #Get Date
                 date = date_current
 
-                insert(title, image, url, date)
+                header.insert(title, image, url, date)
             
     return "done"
 
 def pull_data_wolipop_detik(domain, duration):
-    date = generate_date(duration)
+    date = header.generate_date(duration)
     for date_current in date:
         url = domain
         print(url)
 
         #Get article from website
-        req = http.request('POST', 
+        req = header.https.request('POST', 
                            url, 
                            fields={'tgl': date_current.strftime('%d'),
                                    'bln': date_current.strftime('%m'),
                                    'thn': date_current.strftime('%Y')}
                           )
-        soup = BeautifulSoup(req.data, 'lxml')
+        soup = header.BeautifulSoup(req.data, 'lxml')
 
         try:
             containers = soup.find_all('ul', attrs={'class':'listnews4'})            
@@ -432,6 +432,6 @@ def pull_data_wolipop_detik(domain, duration):
                 #Get Date
                 date = date_current
 
-                insert(title, image, url, date)
+                header.insert(title, image, url, date)
             
     return "done"

@@ -52,7 +52,7 @@ detik_hot_sport_sepakbola_list = [
           'https://sport.detik.com/indeks',
           'https://sport.detik.com/sepakbola/indeks'
           ]
-detik_inet_health_list = [
+detik_food_health_list = [
           'https://food.detik.com/indeks',
           'https://health.detik.com/indeks'
           ]

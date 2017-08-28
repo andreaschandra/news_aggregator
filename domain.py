@@ -30,7 +30,7 @@ kompas_list = [
           'http://travel.kompas.com/search/',
           'http://indeks.kompas.com/edukasi/'
           ]
-movila_list = [
+muvila_list = [
           'http://www.muvila.com/film/index',
           'http://www.muvila.com/tv/index',
           'http://www.muvila.com/entertainment/index',

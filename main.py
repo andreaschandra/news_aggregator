@@ -40,5 +40,7 @@ import kumparan
 # for url_komp in domain.kompas_list:
 # 	kompas.pull_data_kompas(url_komp, 20, 2	)
 
-for url_kumparan in domain.kumparan_list:
-	kumparan.pull_data_kumparan(url_kumparan, 2)
+# for url_kumparan in domain.kumparan_list:
+# 	kumparan.pull_data_kumparan(url_kumparan, 2)
+
+

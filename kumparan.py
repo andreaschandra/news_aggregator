@@ -8,7 +8,8 @@ def pull_data_kumparan(domain, pagination):
 
         #Get article from website
         req = header.https.request('GET', url)
-        jsondata = header.json.loads(req.data)
+        data = req.data.decode('utf-8')
+        jsondata = header.json.loads(data)
         results = jsondata['results']
         
         for i in range(0, len(results)):

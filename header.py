@@ -37,6 +37,7 @@ def insert(judul, image, url, date):
         db_connection.commit()
         
     except:
+        print(url)
         print('duplicate entry')
         
     cursor.close()

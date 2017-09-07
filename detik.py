@@ -389,10 +389,13 @@ def pull_data_wolipop_detik(domain, duration):
                                    'bln': date_current.strftime('%m'),
                                    'thn': date_current.strftime('%Y')}
                           )
+                          
         soup = header.BeautifulSoup(req.data, 'lxml')
 
+        kiri = soup.find('div', attrs={'class': 'kiri'})
+
         try:
-            containers = soup.find_all('ul', attrs={'class':'listnews4'})            
+            containers = kiri.find_all('ul', attrs={'class':'listnews4'})            
         except:
             print('container not found')
             break
@@ -414,7 +417,7 @@ def pull_data_wolipop_detik(domain, duration):
 
                 #Get Title Article
                 try:
-                    title = box.find('a').text
+                    title = box.find('h6').text
                 except:
                     print('a.text not found')
                     break

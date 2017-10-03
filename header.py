@@ -23,7 +23,7 @@ def insert(judul, image, url, date):
     cursor = db_connection.cursor()
     
     try:
-        cursor.execute("""INSERT INTO data (TITLE, IMAGE, URL, DATE) VALUES (%s, %s, %s, %s)""", (judul, image, url, date))
+        cursor.execute("""INSERT INTO sna (TITLE, IMAGE, URL, DATE) VALUES (%s, %s, %s, %s)""", (judul, image, url, date))
         db_connection.commit()
         
     except:

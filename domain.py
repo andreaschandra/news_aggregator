@@ -22,13 +22,13 @@ kompas_list = [
           'http://indeks.kompas.com/ekonomi/',
           'http://indeks.kompas.com/bola/',
           'http://indeks.kompas.com/tekno/',
-          'http://sains.kompas.com/search/',
-          'http://indeks.kompas.com/entertainment/',
-          'http://indeks.kompas.com/otomotif/',
-          'http://indeks.kompas.com/lifestyle/',
-          'http://indeks.kompas.com/properti/',
-          'http://travel.kompas.com/search/',
-          'http://indeks.kompas.com/edukasi/'
+          # 'http://sains.kompas.com/search/',
+          # 'http://indeks.kompas.com/entertainment/',
+          # 'http://indeks.kompas.com/otomotif/',
+          # 'http://indeks.kompas.com/lifestyle/',
+          # 'http://indeks.kompas.com/properti/',
+          # 'http://travel.kompas.com/search/',
+          # 'http://indeks.kompas.com/edukasi/'
           ]
 muvila_list = [
           'http://www.muvila.com/film/index',

@@ -1,7 +1,7 @@
 import header
 
 def pull_data_bintang(domain, pagination, duration):
-    
+
     date = header.generate_date(duration)
     for j in date:
         for i in range(1, pagination):
@@ -29,7 +29,7 @@ def pull_data_bintang(domain, pagination, duration):
                 try:
                     titleraw = box_title.find('h4').text
                     strencode = titleraw.encode('utf-8')
-                    title = header.re.sub(r'\\x[a-z0-9]{2}', '', str(strencode))
+                    title = header.re.sub(r'\\x[a-z0-9]{2}|b\'|\'$', '', str(strencode))
                 except:
                     print('title not found')
                     break

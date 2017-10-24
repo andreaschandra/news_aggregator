@@ -17,14 +17,15 @@ import tirto
 import tribunnews
 import vemale
 
-for url_komp in domain.kompas_list:
-    kompas.pull_data_kompas(domain = url_komp, pagination = 20, duration = 30)
+# for url_komp in domain.kompas_list:
+#     kompas.pull_data_kompas(domain = url_komp, pagination = 20, duration = 30)
     
-detik.pull_data_news_detik(domain = domain.detik_news, pagination = 20, duration = 30)
-detik.pull_data_finance_detik(domain = domain.detik_finance, duration = 30)
-detik.pull_data_inet_detik(domain = domain.detik_inet, duration = 30)
-detik.pull_data_oto_detik(domain = domain.detik_oto, duration = 30)
-detik.pull_data_travel_detik(domain = domain.detik_travel, duration = 30)
+detik.pull_data_news_detik(domain = domain.detik_news, pagination = 2, duration = 1)
+
+# detik.pull_data_finance_detik(domain = domain.detik_finance, duration = 30)
+# detik.pull_data_inet_detik(domain = domain.detik_inet, duration = 30)
+# detik.pull_data_oto_detik(domain = domain.detik_oto, duration = 30)
+# detik.pull_data_travel_detik(domain = domain.detik_travel, duration = 30)
 
 # for url in domain.detik_hot_sport_sepakbola_list:
 #     detik.pull_data_hot_sport_sb_detik(domain = url, duration = 5)
@@ -36,11 +37,11 @@ detik.pull_data_travel_detik(domain = domain.detik_travel, duration = 30)
 
 # cnn.pull_data_cnn(domain = domain.cnn, pagination = 20, duration = 7)
 
-liputan6.pull_data_liputan6(domain = domain.liputan6, pagination = 25, duration = 30)
+# liputan6.pull_data_liputan6(domain = domain.liputan6, pagination = 25, duration = 30)
 
 # okezone.pull_data_okezone(domain = domain.okezone, pagination = 400, duration = 5)
 
-tempo.pull_data_tempo(domain = domain.tempo, duration = 30)
+# tempo.pull_data_tempo(domain = domain.tempo, duration = 30)
 
 # tirto.pull_data_tirto(domain = domain.tirto, pagination = 4, duration = 5)
 

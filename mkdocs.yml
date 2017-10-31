@@ -1,0 +1,6 @@
+site_name: news aggregator
+pages:
+    - User Guide: index.md
+    - API: api.md
+    - About: about.md
+theme: readthedocs
